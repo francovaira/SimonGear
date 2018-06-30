@@ -14,6 +14,12 @@ public class ObserverGuia implements Observer {
 	@Override
 	public void uptdate(ArrayList<master.Importante.Botones> secuencia, boolean operacion) {
 		
+		int contador = secuencia.size() - 1;
+		
+		while(contador >= secuencia.size() - 4 && contador >= 0) {
+			
+			
+		}
 		/*int contador = secuencia.size() - 1;
 		
 		while(contador >= secuencia.size() - 4 || contador >= 0) {
