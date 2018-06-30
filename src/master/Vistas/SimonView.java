@@ -11,9 +11,7 @@ import javax.swing.ImageIcon;
 
 public class SimonView extends JFrame {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	
 	
@@ -32,11 +30,11 @@ public class SimonView extends JFrame {
 	//ACA ESTA EL MENU SECUNDARIO
 	private SMenuWindow smWindow;
 	
-	private JButton btnAyuda;
+	/*private JButton btnAyuda;
 	private JButton btnBackMenu;
 	private JButton btnJugar;
 	private JButton btnExit;
-	private JButton btnDesafio;
+	private JButton btnDesafio;*/
 	
 	private Reproductor reproductor;
 	/**
@@ -89,38 +87,6 @@ public class SimonView extends JFrame {
 		panelesApp.add(smWindow, SMENU);
 		aWindow.setLayout(null);
 		
-		
-		//Botones
-		
-		btnJugar = new JButton("Jugar");
-		btnJugar.setBounds(318, 400, 150, 40);
-		this.jWindow.add(btnJugar);
-		btnJugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnJugar.jpg"));
-		
-		btnDesafio = new JButton("Modo Desafio");
-		btnDesafio.setBounds(318, 460, 150, 40);
-		this.jWindow.add(btnDesafio);
-		
-		btnAyuda = new JButton("Ayuda");
-		btnAyuda.setBounds(318, 520, 150, 40);
-		this.jWindow.add(btnAyuda);
-		btnAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));
-		btnAyuda.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));	
-		
-		btnExit = new JButton("Salir");
-		btnExit.setBounds(318, 580, 150, 40);
-		btnExit.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnSalir.jpg"));
-		this.jWindow.add(btnExit);
-		
-		btnBackMenu = new JButton("Volver al Menu");
-		btnBackMenu.setBounds(320, 590, 150, 60);
-		aWindow.add(btnBackMenu);
-		btnBackMenu.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnMenu.jpg"));
-		
-		
-		//this.jWindow.setLayout(null);
-		
-		
 		// Reproductor
 		reproductor.play_mainTheme();
 	}
@@ -129,31 +95,5 @@ public class SimonView extends JFrame {
 		
 		return reproductor;
 	}
-	
-	//Acciones de los botones
-	
-	 public void jugarAddListener(ActionListener action){
-			
-			btnJugar.addActionListener(action);
-	}
-	 
-	 public void ayudaAddListener(ActionListener action){
-			
-			btnAyuda.addActionListener(action);
-	}
-	 
-	 public void salirAddListener(ActionListener action){
-			
-			btnExit.addActionListener(action);
-	}
-	 
-	 public void backMenuAddListener(ActionListener action){
-			
-			btnBackMenu.addActionListener(action);
-	}
-	 
-     public void desafioAddListener(ActionListener action){
-		 
-    	 	btnDesafio.addActionListener(action);
-	 }
+
 }

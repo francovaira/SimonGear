@@ -115,4 +115,5 @@ public abstract class SimonModel implements Subject {
 	
 	
 	public abstract void jugar(Botones boton);
+	public abstract void resetPosicion();
 }

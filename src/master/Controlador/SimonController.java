@@ -46,16 +46,15 @@ public class SimonController {
 		pWindow.salirAddListener(new VolverAlMenuAction());
 		pWindow.perdisteAddListener(new PerdisteAction());
 		
-		simonView.salirAddListener(new SalirAction());
-		simonView.ayudaAddListener(new AyudaAction());
-		simonView.jugarAddListener(new JugarAction());
-		simonView.backMenuAddListener(new VolverAlMenuAction());
-		simonView.desafioAddListener(new ModoDesafioAction());
+		jWindow.salirAddListener(new SalirAction());
+		jWindow.ayudaAddListener(new AyudaAction());
+		jWindow.jugarAddListener(new JugarAction());
+		jWindow.desafioAddListener(new ModoDesafioAction());
 		
 		smWindow.jugarAddListener(new VolverAJugarAction());
 		smWindow.salirAddListener(new VolverAlMenuAction());
 		
-		
+		aWindow.backMenuAddListener(new VolverAlMenuAction());
 		
 		simonView.setVisible(true);
 		
@@ -214,10 +213,10 @@ public class SimonController {
 		public void actionPerformed(ActionEvent arg0) {
 			
 			jWindow.setVisible(false);
-			aWindow.setVisible(true);
 			guia.setVisible(false);
 			smWindow.setVisible(false);
 			pWindow.setVisible(false);
+			aWindow.setVisible(true);
 		}
 	}
     
@@ -229,18 +228,7 @@ public class SimonController {
 			System.exit(0);
 		}
 	}
-    
-    /*class BackMenuAction implements ActionListener {
-		
-		@Override
-		public void actionPerformed(ActionEvent arg0) {
-			
-			jWindow.setVisible(true);
-			aWindow.setVisible(false);
-			pWindow.setVisible(false);
-		}
-	}*/
-    
+
     class ModoDesafioAction implements ActionListener {
 
 		@Override
@@ -271,6 +259,7 @@ public class SimonController {
 		}
     }
     
+    
     //Listeners para la vista que se muersta cuando perdiste
     
     class VolverAlMenuAction implements ActionListener {
@@ -278,11 +267,11 @@ public class SimonController {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			
-			jWindow.setVisible(true);
 			aWindow.setVisible(false);
 			guia.setVisible(false);
 			smWindow.setVisible(false);
 			pWindow.setVisible(false);
+			jWindow.setVisible(true);
 			
 			simonView.getReproductor().stop_background();
 			simonView.getReproductor().stop_mainTheme();

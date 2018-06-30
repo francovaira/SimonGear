@@ -26,7 +26,8 @@ public class Clasico extends SimonModel {
 				if(posicion == secuencia.size()){ // se llego al final de la secuencia
 					
 					this.generarSecuencia();
-					posicion = 0;
+					resetPosicion();
+					
 					this.notifyObserver(true);
 				}
 			}
@@ -39,7 +40,7 @@ public class Clasico extends SimonModel {
 	
 	public void resetPosicion(){
 		
-		posicion = 0;
+		this.posicion = 0;
 	}
 }
 
