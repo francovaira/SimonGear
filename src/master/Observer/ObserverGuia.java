@@ -20,6 +20,13 @@ public class ObserverGuia implements Observer {
 			
 			
 		}
+		/*int contador = secuencia.size() - 1;
+		
+		while(contador >= secuencia.size() - 4 || contador >= 0) {
+			
+			vistaGuia.imprimir(secuencia.get(contador));
+			contador--;
+		}*/
 		
 	}
 	
