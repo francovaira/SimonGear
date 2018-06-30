@@ -22,12 +22,12 @@ public class AyudaWindow extends JPanel {
 		setLayout(null);
 		
 		JLabel lblAyudawindow = new JLabel("AyudaWindow");
-		lblAyudawindow.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\fondo_Instruccion.jpg"));
+		lblAyudawindow.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\AyudaWindow.png"));
 		lblAyudawindow.setBounds(0, 0, 800, 700);
 		add(lblAyudawindow);
 
 		btnBackMenu = new JButton("Volver al Menu");
-		btnBackMenu.setBounds(320, 590, 150, 60);
+		btnBackMenu.setBounds(335, 597, 157, 60);
 		btnBackMenu.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnMenu.jpg"));
 		add(btnBackMenu);
 	}

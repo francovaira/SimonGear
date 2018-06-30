@@ -27,28 +27,28 @@ public class JuegoWindow extends JPanel {
 		setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Principa_nuevo.png"));
 		lblNewLabel.setBounds(0, 0, 790, 665);
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\Principal.png"));
 		add(lblNewLabel);
 		
 		
 		btnJugar = new JButton("Jugar");
-		btnJugar.setBounds(318, 400, 150, 40);
+		btnJugar.setBounds(303, 296, 150, 60);
 		btnJugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnJugar.jpg"));
 		add(btnJugar);
 		
 		btnDesafio = new JButton("Modo Desafio");
-		btnDesafio.setBounds(318, 460, 150, 40);
+		btnDesafio.setBounds(303, 393, 150, 60);
 		add(btnDesafio);
 		
 		btnAyuda = new JButton("Ayuda");
-		btnAyuda.setBounds(318, 520, 150, 40);
+		btnAyuda.setBounds(302, 497, 150, 60);
 		btnAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));
 		add(btnAyuda);
 		
 		btnExit = new JButton("Salir");
-		btnExit.setBounds(318, 580, 150, 40);
+		btnExit.setBounds(302, 591, 150, 60);
 		btnExit.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnSalir.jpg"));
 		add(btnExit);
 

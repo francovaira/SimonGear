@@ -21,6 +21,10 @@ import java.awt.Rectangle;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import javax.swing.SwingConstants;
+import javax.swing.JMenu;
+import java.awt.Canvas;
+import java.awt.Panel;
+import javax.swing.JDesktopPane;
 
 public class PartidaWindow extends JPanel {
 
@@ -87,12 +91,25 @@ public class PartidaWindow extends JPanel {
 			btnAmarillo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-.jpg"));
 			
 			btnPartidaSalir = new JButton("Salir");
-			btnPartidaSalir.setBounds(new Rectangle(393, 617, 393, 35));
+			btnPartidaSalir.setBounds(new Rectangle(393, 617, 393, 49));
 			add(btnPartidaSalir);
 			
 			btnPartidaAyuda = new JButton("Ayuda");
-			btnPartidaAyuda.setBounds(0, 617, 393, 35);
+			btnPartidaAyuda.setBounds(0, 617, 393, 49);
 			add(btnPartidaAyuda);
+			
+			JPopupMenu popupMenu = new JPopupMenu();
+			popupMenu.setBounds(0, 0, 200, 50);
+			add(popupMenu);
+			
+			JPanel panel = new JPanel();
+			panel.setBounds(0, 0, 1, 1);
+			add(panel);
+			panel.setLayout(null);
+			
+			JDesktopPane desktopPane = new JDesktopPane();
+			desktopPane.setBounds(0, 0, 1, 1);
+			panel.add(desktopPane);
 	}
 	
 	public void rojoAddListener(ActionListener action){
