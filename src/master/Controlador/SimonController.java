@@ -192,7 +192,11 @@ public class SimonController {
 				@Override
 				public void run() {
 					jWindow.setVisible(false);
+					aWindow.setVisible(false);
+					guia.setVisible(false);
+					smWindow.setVisible(false);
 					pWindow.setVisible(true);
+					
 					simonView.getReproductor().stop_mainTheme();
 					simonView.getReproductor().play_background();
 					arrancar(modoDeJuego);					
@@ -209,8 +213,11 @@ public class SimonController {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			
-			aWindow.setVisible(true);
 			jWindow.setVisible(false);
+			aWindow.setVisible(true);
+			guia.setVisible(false);
+			smWindow.setVisible(false);
+			pWindow.setVisible(false);
 		}
 	}
     
@@ -223,7 +230,7 @@ public class SimonController {
 		}
 	}
     
-    class BackMenuAction implements ActionListener {
+    /*class BackMenuAction implements ActionListener {
 		
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
@@ -232,7 +239,7 @@ public class SimonController {
 			aWindow.setVisible(false);
 			pWindow.setVisible(false);
 		}
-	}
+	}*/
     
     class ModoDesafioAction implements ActionListener {
 
@@ -247,7 +254,11 @@ public class SimonController {
 				public void run() {
 					
 					jWindow.setVisible(false);
+					aWindow.setVisible(false);
+					guia.setVisible(false);
+					smWindow.setVisible(false);
 					pWindow.setVisible(true);
+					
 					simonView.getReproductor().stop_mainTheme();
 					simonView.getReproductor().play_background();
 					arrancar(modoDeJuego);	
@@ -267,9 +278,12 @@ public class SimonController {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			
-			smWindow.setVisible(false);
 			jWindow.setVisible(true);
+			aWindow.setVisible(false);
+			guia.setVisible(false);
+			smWindow.setVisible(false);
 			pWindow.setVisible(false);
+			
 			simonView.getReproductor().stop_background();
 			simonView.getReproductor().stop_mainTheme();
 			simonView.getReproductor().play_mainTheme();
@@ -285,8 +299,13 @@ public class SimonController {
 
 				@Override
 				public void run() {
+					
+					jWindow.setVisible(false);
+					aWindow.setVisible(false);
+					guia.setVisible(false);
 					smWindow.setVisible(false);
 					pWindow.setVisible(true);
+					
 					arrancar(modoDeJuego);
 					simonView.getReproductor().stop_mainTheme();
 					simonView.getReproductor().play_background();

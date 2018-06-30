@@ -154,6 +154,6 @@ public class SimonView extends JFrame {
 	 
      public void desafioAddListener(ActionListener action){
 		 
-		 btnDesafio.addActionListener(action);
+    	 	btnDesafio.addActionListener(action);
 	 }
 }
