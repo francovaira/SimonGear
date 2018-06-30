@@ -92,31 +92,30 @@ public class SimonView extends JFrame {
 		
 		//Botones
 		
+		btnJugar = new JButton("Jugar");
+		btnJugar.setBounds(318, 400, 150, 40);
+		this.jWindow.add(btnJugar);
+		btnJugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnJugar.jpg"));
+		
+		btnDesafio = new JButton("Modo Desafio");
+		btnDesafio.setBounds(318, 460, 150, 40);
+		this.jWindow.add(btnDesafio);
+		
+		btnAyuda = new JButton("Ayuda");
+		btnAyuda.setBounds(318, 520, 150, 40);
+		this.jWindow.add(btnAyuda);
+		btnAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));
+		btnAyuda.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));	
+		
+		btnExit = new JButton("Salir");
+		btnExit.setBounds(318, 580, 150, 40);
+		btnExit.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnSalir.jpg"));
+		this.jWindow.add(btnExit);
+		
 		btnBackMenu = new JButton("Volver al Menu");
 		btnBackMenu.setBounds(320, 590, 150, 60);
 		aWindow.add(btnBackMenu);
 		btnBackMenu.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnMenu.jpg"));
-		
-		btnAyuda = new JButton("Ayuda");
-		btnAyuda.setBounds(318, 517, 160, 60);
-		this.jWindow.add(btnAyuda);
-		btnAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));
-		btnAyuda.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));		
-		
-		btnJugar = new JButton("Jugar");
-		btnJugar.setBounds(318, 436, 160, 60);
-		this.jWindow.add(btnJugar);
-		btnJugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnJugar.jpg"));
-		
-		
-		btnExit = new JButton("Salir");
-		btnExit.setBounds(318, 600, 160, 60);
-		btnExit.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnSalir.jpg"));
-		this.jWindow.add(btnExit);
-		
-		btnDesafio = new JButton("Modo Desafio");
-		btnDesafio.setBounds(318, 476, 160, 60);
-		this.jWindow.add(btnDesafio);
 		
 		
 		//this.jWindow.setLayout(null);
