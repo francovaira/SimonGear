@@ -189,4 +189,10 @@ public class PartidaWindow extends JPanel {
 		//Reproductor.play_que_te_paso();
 		perdiste.doClick();
 	}
+	
+	public void asd()
+	{
+		
+		//asdasdas
+	}
 }
