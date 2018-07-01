@@ -14,19 +14,18 @@ public class ObserverGuia implements Observer {
 	@Override
 	public void uptdate(ArrayList<master.Importante.Botones> secuencia, boolean operacion) {
 		
-		/*int contador = secuencia.size() - 1;
+		int contador = secuencia.size() - 1;
 		
-		while(contador >= secuencia.size() - 4 && contador >= 0) {
+		while(contador >= secuencia.size() - 3 && contador >= 0) {
+			
+			vistaGuia.llenarArray(secuencia.get(contador), contador%3);
+			System.out.println(secuencia.get(contador));
 			
 			contador--;
 		}
-		/*int contador = secuencia.size() - 1;
 		
-		while(contador >= secuencia.size() - 4 || contador >= 0) {
-			
-			vistaGuia.imprimir(secuencia.get(contador));
-			contador--;
-		}*/
+		vistaGuia.imprimir();
+		System.out.println("------------------------------------");
 		
 	}
 	

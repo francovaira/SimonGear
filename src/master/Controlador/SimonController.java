@@ -177,8 +177,7 @@ public class SimonController {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			jWindow.setVisible(false);
-			pWindow.setVisible(false);
-			simonView.setVisible(false);
+			//simonView.setVisible(false);
 			aWindow.setVisible(false);
 			smWindow.setVisible(false);
 			guia.setVisible(true);
