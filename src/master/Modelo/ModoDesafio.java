@@ -37,6 +37,7 @@ public class ModoDesafio extends SimonModel {
 			
 		}else{
 			
+			this.resetContador();
 			this.notifyObserver(false);
 		}
 	}
@@ -47,5 +48,9 @@ public class ModoDesafio extends SimonModel {
 		this.posicion=0;
 	}
 	
+	public void resetContador()
+	{
+		contador=0;
+	}
 	
 }

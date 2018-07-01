@@ -30,6 +30,8 @@ public class SimonController {
 		clasico = new Clasico();
 		desafio = new ModoDesafio();
 		
+		
+		
 		this.pWindow = new PartidaWindow();
 		this.aWindow = new AyudaWindow();
 		this.jWindow = new JuegoWindow();
@@ -37,6 +39,12 @@ public class SimonController {
 		this.smWindow = new SMenuWindow();
 		
 		this.simonView = new SimonView(jWindow, aWindow, pWindow, smWindow);
+		
+		clasico.registerObserver(new ObserverJuego(pWindow));
+		clasico.registerObserver(new ObserverGuia(guia));
+		
+		desafio.registerObserver(new ObserverJuego(pWindow));
+		desafio.registerObserver(new ObserverGuia(guia));
 		
 		pWindow.rojoAddListener(new RojoAction());
 		pWindow.verdeAddListener(new VerdeAction());
@@ -58,6 +66,8 @@ public class SimonController {
 		
 		simonView.setVisible(true);
 		
+    	
+		
 	}
 	
     public void arrancar(int modoDeJuego){
@@ -66,19 +76,14 @@ public class SimonController {
     		
     		this.modelo = clasico;
     		
-    		this.clasico.resetPosicion();
-        	this.modelo.nuevaSecuencia();
     	}else if(modoDeJuego == 1){
     		
-    		this.modelo = desafio;
-    		
-    		this.desafio.resetPosicion();
-        	this.modelo.nuevaSecuencia();
-    		
+    		this.modelo = desafio;    		
     	}
     	
-    	modelo.registerObserver(new ObserverJuego(pWindow));
-		modelo.registerObserver(new ObserverGuia(guia));
+    	this.modelo.resetPosicion();
+		this.modelo.resetContador();
+		this.modelo.nuevaSecuencia();
 		
 		this.modelo.notifyObserver(true);
 	}
@@ -159,6 +164,7 @@ public class SimonController {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			
+			modelo.resetContador();
 			Reproductor.play_que_te_paso();
 			pWindow.setVisible(false);
 			smWindow.setVisible(true);
@@ -173,8 +179,8 @@ public class SimonController {
 			jWindow.setVisible(false);
 			pWindow.setVisible(false);
 			simonView.setVisible(false);
-			
-			
+			aWindow.setVisible(false);
+			smWindow.setVisible(false);
 			guia.setVisible(true);
 			
 		}
@@ -190,6 +196,8 @@ public class SimonController {
 		public void actionPerformed(ActionEvent arg0) {
 			
 			modoDeJuego = 0;
+			
+			System.out.println("");
 			
 			Runnable runnable = new Runnable(){
 
@@ -306,7 +314,6 @@ public class SimonController {
 				}	
 			};
 
-			
 			new Thread(runnable).start();
 		}
 	}

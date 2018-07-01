@@ -28,9 +28,6 @@ import javax.swing.JDesktopPane;
 
 public class PartidaWindow extends JPanel {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -6145301589258112057L;
 	/**
 	 * Create the panel.

@@ -42,6 +42,8 @@ public class Clasico extends SimonModel {
 		
 		this.posicion = 0;
 	}
+	
+	public void resetContador()	{}
 }
 
 

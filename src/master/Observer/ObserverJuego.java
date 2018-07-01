@@ -17,15 +17,14 @@ public class ObserverJuego implements Observer {
 	@Override
 	public void uptdate(ArrayList<Botones> secuencia, boolean operacion) {
 		
-		if(operacion == true){	
+		if(operacion == true){
+			
 			for(Botones boton: secuencia){
 				
 				try{
 					
-	    			Thread.sleep(500);
-	    		}catch(InterruptedException e){
-	    			
-	    		}
+	    			Thread.sleep(300);
+	    		}catch(InterruptedException e){}
 				
 				vista.parpadeo(boton);
 			}
