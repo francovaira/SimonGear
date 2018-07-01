@@ -12,6 +12,8 @@ import master.Vistas.*;
 
 public class SimonController {
 	
+	private static SimonController controller;
+	
 	private int modoDeJuego;
 	private SimonModel modelo;
 	private Clasico clasico;
@@ -24,7 +26,9 @@ public class SimonController {
 	private GuiaWindow guia;
 	private SimonView simonView;
 	
-	public SimonController() {
+	private SimonController() {
+		
+		controller = null;
 		
 		modelo = null;
 		clasico = new Clasico();
@@ -68,6 +72,19 @@ public class SimonController {
 		
     	
 		
+	}
+	
+	public static SimonController singleton(){
+		
+		if(controller == null){
+			
+			controller = new SimonController();
+			
+			return controller;
+		}else {
+			
+			return controller;
+		}
 	}
 	
     public void arrancar(int modoDeJuego){

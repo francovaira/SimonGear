@@ -1,10 +1,12 @@
 package master.Importante;
 
+import master.Controlador.SimonController;
+
 public class MainSimon {
 
 	public static void main(String[] args) {
 		
-		new master.Controlador.SimonController();
+		SimonController.singleton();
 	}
 
 }
