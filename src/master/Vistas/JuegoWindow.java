@@ -30,11 +30,8 @@ public class JuegoWindow extends JPanel {
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBounds(0, 0, 790, 665);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\Principal.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Principal.png"));
 		add(lblNewLabel);
-		
-		btnDesafio = new JButton("Modo Desafio");
-		add(btnDesafio);
 		
 		btnJugar = new JButton("Jugar");
 		btnJugar.setBackground(new Color(0, 102, 153));
@@ -42,11 +39,11 @@ public class JuegoWindow extends JPanel {
 		btnJugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnJugar.jpg"));
 		add(btnJugar);
 		
-		//btnDesafio = new JButton("Modo Desafio");
+		btnDesafio = new JButton("Modo Desafio");
 		btnDesafio.setBackground(new Color(0, 102, 153));
 		btnDesafio.setBounds(304, 394, 150, 60);
 		btnDesafio.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnModoDesafio.jpg"));
-		//add(btnDesafio);
+		add(btnDesafio);
 		
 		btnAyuda = new JButton("Ayuda");
 		btnAyuda.setBackground(new Color(0, 102, 153));

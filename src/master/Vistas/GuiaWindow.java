@@ -12,9 +12,12 @@ import java.awt.Color;
 
 public class GuiaWindow extends JFrame {
 	
+	private static final long serialVersionUID = 1L;
+	
 	private String[] ultimosElementos;
-	
-	
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
 	
 	public GuiaWindow() {
 		
@@ -31,7 +34,6 @@ public class GuiaWindow extends JFrame {
 		textField.setEditable(false);
 		textField.setBounds(6, 5, 125, 30);
 		getContentPane().add(textField);
-		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
 		textField_1.setForeground(new Color(255, 255, 255));
@@ -40,7 +42,6 @@ public class GuiaWindow extends JFrame {
 		textField_1.setEditable(false);
 		textField_1.setBounds(6, 45, 125, 30);
 		getContentPane().add(textField_1);
-		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
 		textField_2.setForeground(new Color(255, 255, 255));
@@ -49,18 +50,12 @@ public class GuiaWindow extends JFrame {
 		textField_2.setEditable(false);
 		textField_2.setBounds(6, 85, 125, 30);
 		getContentPane().add(textField_2);
-		textField_2.setColumns(10);
 		
-		JLabel lblNewLabel = new JLabel("New label");
+		/*JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\Principal.jpg"));
 		lblNewLabel.setBounds(0, 0, 136, 121);
-		getContentPane().add(lblNewLabel);
+		getContentPane().add(lblNewLabel);*/
 	}
-	
-	private static final long serialVersionUID = 1L;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
 
 	public void imprimir() {
 		
@@ -75,5 +70,13 @@ public class GuiaWindow extends JFrame {
 	public void llenarArray(master.Importante.Botones boton, int index){
 		
 		this.ultimosElementos[index] = "  " + boton.toString();
+	}
+	
+	public void clearAyuda()
+	{
+		for(int i=0; i<3; i++)
+		{
+			this.ultimosElementos[i]="";
+		}
 	}
 }

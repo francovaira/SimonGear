@@ -51,56 +51,52 @@ public class PartidaWindow extends JPanel {
 		setBounds(new Rectangle(0, 0, 50, 0));
 		
 		perdiste = new JButton();
-			setLayout(null);
+		setLayout(null);
 			
-			//Botones
-			btnVerde = new JButton("Verde");
-			btnVerde.setBounds(2, 0, 395, 310);
-			add(btnVerde);
-			
-			btnVerde.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-dark.jpg"));
-			btnVerde.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-dark.jpg"));
-			btnVerde.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-.jpg"));
-			btnVerde.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-.jpg"));
-			
-			btnRojo = new JButton("Rojo");
-			btnRojo.setBounds(399, 0, 395, 310);
-			add(btnRojo);
-			
-			btnRojo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-dark.jpg"));
-			btnRojo.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-dark.jpg"));
-			btnRojo.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-.jpg"));
-			btnRojo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-.jpg"));
-			
-			btnAzul = new JButton("Azul");
-			btnAzul.setBounds(2, 310, 395, 310);
-			add(btnAzul);
-			
-			btnAzul.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-dark.jpg"));
-			btnAzul.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-dark.jpg"));
-			btnAzul.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-.jpg"));
-			btnAzul.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-.jpg"));
-			
-			btnAmarillo = new JButton("Amarillo");
-			btnAmarillo.setBounds(399, 310, 395, 310);
-			add(btnAmarillo);
-			
-			btnAmarillo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-dark.jpg"));
-			btnAmarillo.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-dark.jpg"));
-			btnAmarillo.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-.jpg"));
-			btnAmarillo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-.jpg"));
-			
-			btnPartidaSalir = new JButton("Salir");
-			btnPartidaSalir.setBackground(new Color(0, 102, 153));
-			btnPartidaSalir.setBounds(new Rectangle(399, 622, 393, 49));
-			btnPartidaSalir.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnPSalir.jpg"));
-			add(btnPartidaSalir);
-			
-			btnPartidaAyuda = new JButton("Ayuda");
-			btnPartidaAyuda.setBackground(new Color(0, 102, 153));
-			btnPartidaAyuda.setBounds(2, 622, 393, 49);
-			btnPartidaAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnPAyuda.jpg"));
-			add(btnPartidaAyuda);
+		//Botones
+		btnVerde = new JButton("Verde");
+		btnVerde.setBounds(2, 0, 395, 310);			
+		btnVerde.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-dark.jpg"));
+		btnVerde.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-dark.jpg"));
+		btnVerde.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-.jpg"));
+		btnVerde.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-.jpg"));
+		add(btnVerde);
+		
+		btnRojo = new JButton("Rojo");
+		btnRojo.setBounds(399, 0, 395, 310);
+		btnRojo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-dark.jpg"));
+		btnRojo.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-dark.jpg"));
+		btnRojo.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-.jpg"));
+		btnRojo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-.jpg"));
+		add(btnRojo);
+		
+		btnAzul = new JButton("Azul");
+		btnAzul.setBounds(2, 310, 395, 310);			
+		btnAzul.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-dark.jpg"));
+		btnAzul.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-dark.jpg"));
+		btnAzul.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-.jpg"));
+		btnAzul.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-.jpg"));
+		add(btnAzul);
+		
+		btnAmarillo = new JButton("Amarillo");
+		btnAmarillo.setBounds(399, 310, 395, 310);			
+		btnAmarillo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-dark.jpg"));
+		btnAmarillo.setDisabledIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-dark.jpg"));
+		btnAmarillo.setPressedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-.jpg"));
+		btnAmarillo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-.jpg"));
+		add(btnAmarillo);
+		
+		btnPartidaSalir = new JButton("Salir");
+		btnPartidaSalir.setBackground(new Color(0, 102, 153));
+		btnPartidaSalir.setBounds(new Rectangle(399, 622, 393, 49));
+		btnPartidaSalir.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnPSalir.jpg"));
+		add(btnPartidaSalir);
+		
+		btnPartidaAyuda = new JButton("Ayuda");
+		btnPartidaAyuda.setBackground(new Color(0, 102, 153));
+		btnPartidaAyuda.setBounds(2, 622, 393, 49);
+		btnPartidaAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnPAyuda.jpg"));
+		add(btnPartidaAyuda);
 	}
 	
 	public void rojoAddListener(ActionListener action){
@@ -146,9 +142,7 @@ public class PartidaWindow extends JPanel {
     		
     		try{
     			Thread.sleep(500);
-    		}catch(InterruptedException e){
-    			
-    		}
+    		}catch(InterruptedException e){}
     		
     		btnRojo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-dark.jpg"));
     		break;
@@ -158,9 +152,7 @@ public class PartidaWindow extends JPanel {
     		
     		try{
     			Thread.sleep(500);
-    		}catch(InterruptedException e){
-    			
-    		}
+    		}catch(InterruptedException e){}
     		
     		btnVerde.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-dark.jpg"));
     		break;
@@ -170,9 +162,7 @@ public class PartidaWindow extends JPanel {
     		
     		try{
     			Thread.sleep(500);
-    		}catch(InterruptedException e){
-    			
-    		}
+    		}catch(InterruptedException e){}
     		
     		btnAzul.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-dark.jpg"));
     		break;
@@ -182,9 +172,7 @@ public class PartidaWindow extends JPanel {
     		
     		try{
     			Thread.sleep(500);
-    		}catch(InterruptedException e){
-    			
-    		}
+    		}catch(InterruptedException e){}
     		
     		btnAmarillo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-dark.jpg"));
     		break;
@@ -196,11 +184,5 @@ public class PartidaWindow extends JPanel {
 		
 		//Reproductor.play_que_te_paso();
 		perdiste.doClick();
-	}
-	
-	public void asd()
-	{
-		
-		//asdasdas
 	}
 }

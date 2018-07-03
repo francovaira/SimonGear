@@ -35,7 +35,6 @@ public class SimonController {
 		desafio = new ModoDesafio();
 		
 		
-		
 		this.pWindow = new PartidaWindow();
 		this.aWindow = new AyudaWindow();
 		this.jWindow = new JuegoWindow();
@@ -69,9 +68,7 @@ public class SimonController {
 		aWindow.backMenuAddListener(new VolverAlMenuAction());
 		
 		simonView.setVisible(true);
-		
-    	
-		
+
 	}
 	
 	public static SimonController singleton(){
@@ -100,6 +97,7 @@ public class SimonController {
     	
     	this.modelo.resetPosicion();
 		this.modelo.resetContador();
+		this.guia.clearAyuda();
 		this.modelo.nuevaSecuencia();
 		
 		this.modelo.notifyObserver(true);
@@ -212,8 +210,6 @@ public class SimonController {
 		public void actionPerformed(ActionEvent arg0) {
 			
 			modoDeJuego = 0;
-			
-			System.out.println("");
 			
 			Runnable runnable = new Runnable(){
 
