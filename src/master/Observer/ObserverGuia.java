@@ -18,16 +18,11 @@ public class ObserverGuia implements Observer {
 		
 		while(contador >= secuencia.size() - 3 && contador >= 0) {
 			
-			vistaGuia.llenarArray(secuencia.get(contador), contador%3);
-			//System.out.println(secuencia.get(contador));
+			vistaGuia.guardarEnArray(secuencia.get(contador), contador%3);
 			
 			contador--;
 		}
 		
 		vistaGuia.imprimir();
-		//System.out.println("------------------------------------");
-		
 	}
-	
-	
 }
