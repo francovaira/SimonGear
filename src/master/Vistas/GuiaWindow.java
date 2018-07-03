@@ -23,7 +23,7 @@ public class GuiaWindow extends JFrame {
 		
 		this.ultimosElementos = new String[3];
 		
-		this.setBounds(1075,20,142,150);
+		this.setBounds(1075,20,147,155);
 		getContentPane().setLayout(null);
 		this.setResizable(false);
 		
@@ -32,7 +32,7 @@ public class GuiaWindow extends JFrame {
 		textField.setBackground(new Color(0, 102, 153));
 		textField.setFont(new Font("Tahoma", Font.BOLD, 20));
 		textField.setEditable(false);
-		textField.setBounds(6, 5, 125, 30);
+		textField.setBounds(6, 5, 145, 30);
 		getContentPane().add(textField);
 		
 		textField_1 = new JTextField();
@@ -40,7 +40,7 @@ public class GuiaWindow extends JFrame {
 		textField_1.setBackground(new Color(0, 102, 153));
 		textField_1.setFont(new Font("Tahoma", Font.BOLD, 20));
 		textField_1.setEditable(false);
-		textField_1.setBounds(6, 45, 125, 30);
+		textField_1.setBounds(6, 45, 145, 30);
 		getContentPane().add(textField_1);
 		
 		textField_2 = new JTextField();
@@ -48,13 +48,8 @@ public class GuiaWindow extends JFrame {
 		textField_2.setBackground(new Color(0, 102, 153));
 		textField_2.setFont(new Font("Tahoma", Font.BOLD, 20));
 		textField_2.setEditable(false);
-		textField_2.setBounds(6, 85, 125, 30);
+		textField_2.setBounds(6, 85, 145, 30);
 		getContentPane().add(textField_2);
-		
-		/*JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\Principal.jpg"));
-		lblNewLabel.setBounds(0, 0, 136, 121);
-		getContentPane().add(lblNewLabel);*/
 	}
 
 	public void imprimir() {
@@ -62,8 +57,6 @@ public class GuiaWindow extends JFrame {
 		this.textField.setText(this.ultimosElementos[0]);
 		this.textField_1.setText(this.ultimosElementos[1]);
 		this.textField_2.setText(this.ultimosElementos[2]);
-		
-		/*this.textArea.setText(boton.toString());*/
 		
 	}
 	
