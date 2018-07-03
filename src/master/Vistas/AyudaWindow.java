@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import java.awt.Color;
 
 public class AyudaWindow extends JPanel {
 
@@ -22,12 +23,13 @@ public class AyudaWindow extends JPanel {
 		setLayout(null);
 		
 		JLabel lblAyudawindow = new JLabel("AyudaWindow");
-		lblAyudawindow.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\AyudaWindow.png"));
+		lblAyudawindow.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\AyudaWindow.png"));
 		lblAyudawindow.setBounds(0, 0, 800, 700);
 		add(lblAyudawindow);
 
 		btnBackMenu = new JButton("Volver al Menu");
-		btnBackMenu.setBounds(335, 597, 157, 60);
+		btnBackMenu.setBackground(new Color(0, 102, 153));
+		btnBackMenu.setBounds(297, 610, 150, 58);
 		btnBackMenu.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnMenu.jpg"));
 		add(btnBackMenu);
 	}

@@ -58,6 +58,7 @@ public class SimonView extends JFrame {
 	 * Create the frame.
 	 */
 	public SimonView(JuegoWindow jWindow, AyudaWindow aWindow, PartidaWindow pWindow, SMenuWindow smWindow){
+		setResizable(false);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(275, 20, 800, 700);

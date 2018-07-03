@@ -25,6 +25,7 @@ import javax.swing.JMenu;
 import java.awt.Canvas;
 import java.awt.Panel;
 import javax.swing.JDesktopPane;
+import java.awt.Color;
 
 public class PartidaWindow extends JPanel {
 
@@ -42,7 +43,9 @@ public class PartidaWindow extends JPanel {
 	
 	
 	public PartidaWindow() {
-		setPreferredSize(new Dimension(786, 652));
+		setBackground(new Color(0, 102, 153));
+		setForeground(new Color(0, 0, 0));
+		setPreferredSize(new Dimension(786, 650));
 		setMinimumSize(new Dimension(0, 0));
 		setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		setBounds(new Rectangle(0, 0, 50, 0));
@@ -52,7 +55,7 @@ public class PartidaWindow extends JPanel {
 			
 			//Botones
 			btnVerde = new JButton("Verde");
-			btnVerde.setBounds(0, 0, 393, 310);
+			btnVerde.setBounds(2, 0, 395, 310);
 			add(btnVerde);
 			
 			btnVerde.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-dark.jpg"));
@@ -61,7 +64,7 @@ public class PartidaWindow extends JPanel {
 			btnVerde.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Green-.jpg"));
 			
 			btnRojo = new JButton("Rojo");
-			btnRojo.setBounds(393, 0, 393, 310);
+			btnRojo.setBounds(399, 0, 395, 310);
 			add(btnRojo);
 			
 			btnRojo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-dark.jpg"));
@@ -70,7 +73,7 @@ public class PartidaWindow extends JPanel {
 			btnRojo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Red-.jpg"));
 			
 			btnAzul = new JButton("Azul");
-			btnAzul.setBounds(0, 310, 393, 310);
+			btnAzul.setBounds(2, 310, 395, 310);
 			add(btnAzul);
 			
 			btnAzul.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-dark.jpg"));
@@ -79,7 +82,7 @@ public class PartidaWindow extends JPanel {
 			btnAzul.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Blue-.jpg"));
 			
 			btnAmarillo = new JButton("Amarillo");
-			btnAmarillo.setBounds(393, 310, 393, 310);
+			btnAmarillo.setBounds(399, 310, 395, 310);
 			add(btnAmarillo);
 			
 			btnAmarillo.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-dark.jpg"));
@@ -88,25 +91,16 @@ public class PartidaWindow extends JPanel {
 			btnAmarillo.setSelectedIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\Yellow-.jpg"));
 			
 			btnPartidaSalir = new JButton("Salir");
-			btnPartidaSalir.setBounds(new Rectangle(393, 617, 393, 49));
+			btnPartidaSalir.setBackground(new Color(0, 102, 153));
+			btnPartidaSalir.setBounds(new Rectangle(399, 622, 393, 49));
+			btnPartidaSalir.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnPSalir.jpg"));
 			add(btnPartidaSalir);
 			
 			btnPartidaAyuda = new JButton("Ayuda");
-			btnPartidaAyuda.setBounds(0, 617, 393, 49);
+			btnPartidaAyuda.setBackground(new Color(0, 102, 153));
+			btnPartidaAyuda.setBounds(2, 622, 393, 49);
+			btnPartidaAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnPAyuda.jpg"));
 			add(btnPartidaAyuda);
-			
-			JPopupMenu popupMenu = new JPopupMenu();
-			popupMenu.setBounds(0, 0, 200, 50);
-			add(popupMenu);
-			
-			JPanel panel = new JPanel();
-			panel.setBounds(0, 0, 1, 1);
-			add(panel);
-			panel.setLayout(null);
-			
-			JDesktopPane desktopPane = new JDesktopPane();
-			desktopPane.setBounds(0, 0, 1, 1);
-			panel.add(desktopPane);
 	}
 	
 	public void rojoAddListener(ActionListener action){

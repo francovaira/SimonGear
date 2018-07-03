@@ -6,6 +6,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
+import java.awt.Color;
 
 public class SMenuWindow extends JPanel {
 	
@@ -23,19 +25,21 @@ public class SMenuWindow extends JPanel {
 		setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Franco\\Documents\\Materias\\Ingenieria de Software\\TP Final - SimonGear\\Multimedia\\Imagen\\SMEnu_2.png"));
-		lblNewLabel.setBounds(0, 5, 788, 700);
+		lblNewLabel.setBackground(new Color(0, 102, 204));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\SMenuWindow.png"));
+		lblNewLabel.setBounds(0, 0, 790, 700);
 		add(lblNewLabel);
 		
 		jugar = new JButton("Volver a Jugar");
-		jugar.setIcon(new ImageIcon("C:\\Users\\Franco\\Documents\\Materias\\Ingenieria de Software\\TP Final - SimonGear\\Multimedia\\Imagen\\btnVolverJugar.jpg"));
-		jugar.setVisible(true);
-		jugar.setBounds(272, 450, 250, 60);
+		jugar.setBackground(new Color(0, 102, 153));
+		jugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnVJugar.jpg"));
+		jugar.setBounds(244, 487, 317, 60);
 		add(jugar);
 		
 		salir = new JButton("Salir");
-		salir.setIcon(new ImageIcon("C:\\Users\\Franco\\Documents\\Materias\\Ingenieria de Software\\TP Final - SimonGear\\Multimedia\\Imagen\\btnMenu2.jpg"));
-		salir.setBounds(272, 540, 250, 60);
+		salir.setBackground(new Color(0, 102, 153));
+		salir.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnVMenu.jpg"));
+		salir.setBounds(244, 586, 317, 60);
 		add(salir);
 	}
 	

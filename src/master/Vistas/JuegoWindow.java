@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+import java.awt.Color;
 
 public class JuegoWindow extends JPanel {
 	
@@ -32,23 +33,30 @@ public class JuegoWindow extends JPanel {
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tolay\\OneDrive\\Escritorio\\IMAGENES SIMON GEAR\\Principal.png"));
 		add(lblNewLabel);
 		
+		btnDesafio = new JButton("Modo Desafio");
+		add(btnDesafio);
 		
 		btnJugar = new JButton("Jugar");
-		btnJugar.setBounds(303, 296, 150, 60);
+		btnJugar.setBackground(new Color(0, 102, 153));
+		btnJugar.setBounds(303, 293, 150, 60);
 		btnJugar.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnJugar.jpg"));
 		add(btnJugar);
 		
-		btnDesafio = new JButton("Modo Desafio");
-		btnDesafio.setBounds(303, 393, 150, 60);
-		add(btnDesafio);
+		//btnDesafio = new JButton("Modo Desafio");
+		btnDesafio.setBackground(new Color(0, 102, 153));
+		btnDesafio.setBounds(304, 394, 150, 60);
+		btnDesafio.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnModoDesafio.jpg"));
+		//add(btnDesafio);
 		
 		btnAyuda = new JButton("Ayuda");
-		btnAyuda.setBounds(302, 497, 150, 60);
+		btnAyuda.setBackground(new Color(0, 102, 153));
+		btnAyuda.setBounds(303, 497, 151, 60);
 		btnAyuda.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnAyuda.jpg"));
 		add(btnAyuda);
 		
 		btnExit = new JButton("Salir");
-		btnExit.setBounds(302, 591, 150, 60);
+		btnExit.setBackground(new Color(0, 102, 153));
+		btnExit.setBounds(302, 590, 150, 62);
 		btnExit.setIcon(new ImageIcon("C:\\Program Files\\SimonGear\\img\\btnSalir.jpg"));
 		add(btnExit);
 
